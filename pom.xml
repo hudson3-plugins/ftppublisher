@@ -66,33 +66,10 @@
 	<!-- This section required for releasing with new jenkins infrastructure 
 		when on older versions of parent pom -->
 	<scm>
-		<connection>scm:svn:https://svn.jenkins-ci.org/trunk/hudson/plugins/ftppublisher</connection>
-		<developerConnection>scm:svn:https://svn.jenkins-ci.org/trunk/hudson/plugins/ftppublisher</developerConnection>
-		<url>https://svn.jenkins-ci.org/trunk/hudson/plugins/ftppublisher</url>
+		<connection>scm:git:git://github.com/hudson3-plugins/ftppublisher.git</connection>
+		<developerConnection>scm:git:git@github.com:hudson3-plugins/ftppublisher.git</developerConnection>
+		<url>https://github.com/hudson3-plugins/ftppublisher</url>
 	</scm>
-<!--
-	<distributionManagement>
-		<repository>
-			<id>maven.jenkins-ci.org</id>
-			<url>http://maven.jenkins-ci.org:8081/content/repositories/releases/</url>
-		</repository>
-	</distributionManagement>
-
-
-    <repositories>
-        <repository>
-            <id>repo.jenkins-ci.org</id>
-            <url>http://repo.jenkins-ci.org/public/</url>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>repo.jenkins-ci.org</id>
-            <url>http://repo.jenkins-ci.org/public/</url>
-        </pluginRepository>
-    </pluginRepositories>
--->
 </project>  
   
 
