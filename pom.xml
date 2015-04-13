@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.eclipse.hudson.plugins</groupId>
 		<artifactId>hudson-plugin-parent</artifactId>
-		<version>3.0.0-RC2</version>
+		<version>3.0.0</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
@@ -59,6 +59,12 @@
 				<configuration>
 					<goals>deploy</goals>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.hudson.tools</groupId>
+				<artifactId>maven-hpi-plugin</artifactId>
+				<!-- Version 3.0.3 should resolve failures with Java 7. -->
+				<version>3.0.3</version>
 			</plugin>
 		</plugins>
 	</build>
