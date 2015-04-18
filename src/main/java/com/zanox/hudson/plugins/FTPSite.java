@@ -355,7 +355,12 @@ public class FTPSite {
 			String localfilename = filePath.getName();
 			// mkdirs(folderPath, logger);
 			InputStream in = filePath.read();
-			ftpClient.storeFile(localfilename, in);
+			ftpClient.setDataTimeout(timeOut);
+			if (!ftpClient.storeFile(localfilename, in)) {
+			    in.close();
+			    throw new IOException("Failed to upload "
+			            + localfilename);
+			}
 			in.close();
 		}
 
